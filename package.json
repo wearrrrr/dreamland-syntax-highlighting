@@ -1,0 +1,32 @@
+{
+  "name": "dreamland",
+  "displayName": "dreamland",
+  "description": "N/A",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/dreamland.json",
+        "scopeName": "inline.dreamland.css",
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "text.html.basic"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.css": "css",
+          "source.css": "css"
+        }
+      }
+    ]
+  }
+}

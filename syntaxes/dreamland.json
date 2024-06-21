@@ -1,0 +1,26 @@
+{
+	"fileTypes": [],
+	"injectionSelector": "string.template.js.jsx",
+	"patterns": [
+		{
+			"begin": "(css\\s*`)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.definition.string.begin.css"
+				}
+			},
+			"end": "(`)",
+			"endCaptures": {
+				"1": {
+					"name": "punctuation.definition.string.end.css"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.css"
+				}
+			]
+		}
+	],
+	"scopeName": "inline.dreamland.css"
+}
